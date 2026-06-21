@@ -36,12 +36,12 @@ const HomeView: React.FC<HomeViewProps> = ({
   const mostPlayedThisYear = useMemo(() => {
     const rawList = [
       { title: 'Counter-Strike 2', defaultId: 'p1', rating: 4.8, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/library_600x900.jpg' },
-      { title: 'Minecraft', defaultId: 'extra-9', rating: 4.9, fallbackImg: 'https://m.media-amazon.com/images/I/61M6CInU8XL._SL1000_.jpg' },
-      { title: 'Roblox', defaultId: 'extra-6', rating: 4.2, fallbackImg: 'https://gmedia.playstation.com/is/image/psgv2/roblox-listing-thumb-01-en-12sep23?$facebook$' },
-      { title: 'Fortnite', defaultId: 'extra-2', rating: 4.5, fallbackImg: 'https://gmedia.playstation.com/is/image/psgv2/fortnite-listing-thumb-en-14nov22?$facebook$' },
-      { title: 'League of Legends', defaultId: 'extra-lol', rating: 4.4, fallbackImg: 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4f49439a3f2824fe/6346bc063d83b05786ed057e/League_of_Legends_Logo_Artwork.jpg' },
+      { title: 'Minecraft', defaultId: 'extra-9', rating: 4.9, fallbackImg: '/covers/minecraft.jpg' },
+      { title: 'Roblox', defaultId: 'extra-6', rating: 4.2, fallbackImg: '/covers/roblox.jpg' },
+      { title: 'Fortnite', defaultId: 'extra-2', rating: 4.5, fallbackImg: '/covers/fortnite.jpg' },
+      { title: 'League of Legends', defaultId: 'extra-lol', rating: 4.4, fallbackImg: '/covers/league-of-legends.jpg' },
       { title: 'The Sims 4', defaultId: 'extra-sims4', rating: 4.3, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222670/library_600x900.jpg' },
-      { title: 'Valorant', defaultId: 'extra-39', rating: 4.4, fallbackImg: 'https://cdn1.epicgames.com/offer/cbd5b3d673ad4ea18497ecb44f2fa31b/EGS_VALORANT_RiotGames_S2_1200x1600-4789b9177bb3fdfeb00d027732d8471c' },
+      { title: 'Valorant', defaultId: 'extra-39', rating: 4.4, fallbackImg: '/covers/valorant.jpg' },
       { title: 'Rocket League', defaultId: 'extra-rocketleague', rating: 4.6, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252950/library_600x900.jpg' },
       { title: 'Overwatch', defaultId: 'extra-overwatch', rating: 4.0, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2357570/library_600x900.jpg' },
       { title: 'Diablo IV', defaultId: 'extra-diablo4', rating: 4.1, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/library_600x900.jpg' },
@@ -51,8 +51,8 @@ const HomeView: React.FC<HomeViewProps> = ({
       { title: 'Apex Legends', defaultId: 'p5', rating: 4.6, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/library_600x900.jpg' },
       { title: 'R.E.P.O.', defaultId: 'extra-repo', rating: 4.5, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211510/library_600x900.jpg' },
       { title: 'Grand Theft Auto V', defaultId: 'p6', rating: 4.9, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg' },
-      { title: 'World of Warcraft', defaultId: 'extra-wow', rating: 4.8, fallbackImg: 'https://media.rawg.io/media/games/18a/18a0ffbe97ccda7be34df4e28080b0bb.jpg' },
-      { title: 'Slay the Spire 2', defaultId: 'extra-slaythespire2', rating: 4.9, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868470/library_600x900.jpg' },
+      { title: 'World of Warcraft', defaultId: 'extra-wow', rating: 4.8, fallbackImg: '/covers/world-of-warcraft.jpg' },
+      { title: 'Slay the Spire 2', defaultId: 'extra-slaythespire2', rating: 4.9, fallbackImg: '/covers/slay-the-spire.jpg' },
       { title: 'Battlefield 6', defaultId: 'extra-battlefield6', rating: 4.2, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1517290/library_600x900.jpg' },
       { title: 'Tom Clancy\'s Rainbow Six Siege', defaultId: 'extra-rainbowsix', rating: 4.7, fallbackImg: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359550/library_600x900.jpg' }
     ];

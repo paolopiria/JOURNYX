@@ -64,10 +64,20 @@ const StyledPlaceholder: React.FC<{ title: string; isDarkMode: boolean }> = ({ t
 };
 
 const GameCard: React.FC<GameCardProps> = ({ game, onClick, compact = false, minimal = false, isDarkMode = false, rank }) => {
-  const [imgSrc, setImgSrc] = useState<string>(rawgImageCache[game.title] || game.coverUrl);
+  const [imgSrc, setImgSrc] = useState<string>(
+    game.coverUrl && game.coverUrl.startsWith('/covers/') 
+      ? game.coverUrl 
+      : (rawgImageCache[game.title] || game.coverUrl)
+  );
   const [hasError, setHasError] = useState<boolean>(false);
 
   useEffect(() => {
+    if (game.coverUrl && game.coverUrl.startsWith('/covers/')) {
+      setImgSrc(game.coverUrl);
+      setHasError(false);
+      return;
+    }
+
     setImgSrc(rawgImageCache[game.title] || game.coverUrl);
     setHasError(false);
 
