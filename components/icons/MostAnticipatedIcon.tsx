@@ -1,0 +1,109 @@
+import React from 'react';
+
+interface IconProps {
+  size?: number;
+  className?: string;
+}
+
+export const MostAnticipatedIcon: React.FC<IconProps> = ({ size = 24, className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      width={size}
+      height={size}
+      className={className}
+    >
+      <rect
+        x="1.76"
+        y="5.95"
+        width="28.48"
+        height="23.74"
+        fill="none"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={3}
+      />
+      <rect
+        x="4.72"
+        y="0.85"
+        width="3.9"
+        height="6.76"
+        fill="#764d9a"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="23.72"
+        y="0.85"
+        width="3.9"
+        height="6.76"
+        fill="#764d9a"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="4.72"
+        y="12.65"
+        width="5.54"
+        height="3.84"
+        fill="#fff"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="13.23"
+        y="12.65"
+        width="5.54"
+        height="3.84"
+        fill="#fff"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="21.74"
+        y="12.65"
+        width="5.54"
+        height="3.84"
+        fill="#764d9a"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="4.72"
+        y="19.15"
+        width="5.54"
+        height="3.84"
+        fill="#fff"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="13.23"
+        y="19.15"
+        width="5.54"
+        height="3.84"
+        fill="#764d9a"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+      <rect
+        x="21.74"
+        y="19.15"
+        width="5.54"
+        height="3.84"
+        fill="#fff"
+        stroke="currentColor"
+        strokeLinejoin="bevel"
+        strokeWidth={1}
+      />
+    </svg>
+  );
+};

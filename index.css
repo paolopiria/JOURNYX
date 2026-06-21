@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #764d9a;
+  --color-detail: #ee710b;
+  --color-app-bg: #ffffff;
+  --color-app-bg-dark: #140e23;
+  
+  --font-heading: "Chakra Petch", sans-serif;
+  --font-sans: "Source Sans 3", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans transition-colors duration-300;
+    background-color: var(--color-app-bg);
+    color: theme('colors.slate.900');
+  }
+  
+  .dark body {
+    background-color: var(--color-app-bg-dark);
+    color: theme('colors.white');
+  }
+
+  /* Hide scrollbars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .app-name {
+    color: var(--color-brand);
+  }
+  
+  .detail-accent {
+    color: var(--color-detail);
+  }
+}
